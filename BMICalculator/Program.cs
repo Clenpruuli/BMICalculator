@@ -35,7 +35,30 @@ namespace BMICalculator
                 Result = weight / height2;
 
                 Console.WriteLine($"Your BMI is {Result} kg/m2.");
-            }
+
+                if (Result <= 19)
+                {
+                    Console.WriteLine("You are underweight");
+                }
+                else if (Result <= 25)
+                {
+                    Console.WriteLine("You have normalweight");
+                }
+                else if (Result <= 30)
+                {
+                    Console.WriteLine("You are overweight");
+
+
+                }
+                else if (Result <= 31)
+                    {
+                    Console.WriteLine("You are extrimely overweight");
+                    }
+
+
+
+
+            }    
 
 
 
